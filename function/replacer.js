@@ -1,5 +1,5 @@
 //Custom module
-module.exports = function respoond(template, element) {
+module.exports = function replacer(template, element) {
   let output = template.replace(/{%PRODUCTNAME%}/g, element.productName);
   output = output.replace(/{%QUANTITY%}/g, element.quantity);
   output = output.replace(/{%IMAGE%}/g, element.image);

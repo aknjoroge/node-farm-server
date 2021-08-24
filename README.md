@@ -51,6 +51,8 @@ fs.readFile(`${__dirname}/data/aap.json`, "utf-8", function (error, data) {
 
 The server runs on port `3000` using the http module, can change the port to any another number, access the app through localhost:PORTNUMBER ex localhost:3000
 
+OR 127.0.0.1:3000
+
 ```javascript
 server.listen(3000, "127.0.0.1", function () {
   console.log("server has started");
@@ -74,10 +76,10 @@ The url module `let url = require("url");` is used to extract query parameters f
 
 We then use object destructuring to get the pathname and query out of the object
 
-Routes are rendered using the request url
+Routes are conditionally rendered using the destructured pathname
 
 ```javascript
-if (request.url === "/") {
+if (pathname === "/") {
   /*Code */
 }
 ```
@@ -91,8 +93,10 @@ if (request.url === "/") {
 Alexander karanja
 [@Twitter](https://twitter.com/aknjoroge)
 
+## Acknowledgments
+
+[Jonas Schmedtmann](https://twitter.com/jonasschmedtman)
+
 ## License
 
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License;
-
-## Acknowledgments

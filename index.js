@@ -6,7 +6,7 @@ let replace = require("./function/replacer");
 //reading the files
 let apiData = fs.readFileSync(`${__dirname}/data/app.json`);
 let apiobject = JSON.parse(apiData);
-let card = fs.readFileSync(`${__dirname}/static/Carc.html`, "utf-8");
+let card = fs.readFileSync(`${__dirname}/static/Card.html`, "utf-8");
 let home = fs.readFileSync(`${__dirname}/static/home.html`, "utf-8");
 let product = fs.readFileSync(
   `${__dirname}/static/productDetails.html`,

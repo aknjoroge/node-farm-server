@@ -38,7 +38,7 @@ let fs = require("fs");
 `fs` has both synchronous and Asynchronous file reading method, in this project i use the synchronous method
 
 ```javascript
-fs.readFileSync(`${__dirname}/data/aap.json`);
+fs.readFileSync(`${__dirname}/data/app.json`);
 ```
 
 For A **large** project its better to use the Asynchronous method of fs

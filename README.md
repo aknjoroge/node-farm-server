@@ -44,7 +44,7 @@ fs.readFileSync(`${__dirname}/data/aap.json`);
 For A **large** project its better to use the Asynchronous method of fs
 
 ```javascript
-fs.readFile(`${__dirname}/data/aap.json`, "utf-8", function (error, data) {
+fs.readFile(`${__dirname}/data/app.json`, "utf-8", function (error, data) {
   /* data error */
 });
 ```

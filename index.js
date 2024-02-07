@@ -44,6 +44,6 @@ let server = http.createServer(function (request, response) {
     response.end("<h1>Page not found</h1>");
   }
 });
-server.listen(3000, "127.0.0.1", function () {
+server.listen(3000, function () {
   console.log("server started");
 });
